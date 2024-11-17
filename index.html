@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Single-page developer portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+   <nav>
+      <div class="logo">
+         <a href="#">adamkeyes</a>
+      </div>
+      <div class="social-links">
+         <a href="#"><img class="nav-icons" src="assets/images/icon-github.svg" alt="GitHub"></a>
+         <a href="#"><img class="nav-icons" src="assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a>
+         <a href="#"><img class="nav-icons" src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+         <a href="#"><img class="nav-icons" src="assets/images/icon-twitter.svg" alt="Twitter"></a>
+      </div>
+   </nav>
+   <!-- Hero section -->
+  <section class="hero">
+      <div class="row">
+        <div>
+          <img src="assets/images/pattern-rings.svg" alt="pattern-rings">
+          <h1>Nice to meet you! I'm Adam Keyes.</h1>
+          <p>Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.</p>
+          <a class="btn-contact" href="#">Contact me</a>
+        </div>
+        <div>
+          <img src="assets/images/pattern-circle.svg" alt="circles">
+          <picture>
+            <source srcset="assets/images/image-profile-desktop.webp" media="(min-width: 768px)">
+            <source srcset="assets/images/image-profile-tablet.webp" media="(min-width: 768px)">
+            <source srcset="assets/images/image-profile-mobile.webp" media="(min-width: 568px)">
+            <img class="hero-img" src="assets/images/image-profile-desktop.webp" alt="Adam Keyes">
+          </picture>
+        </div>
+      </div>
+  </section>
+  
+  <!-- skill section -->
+   <section class="skills">
+    <div class="grid-row">
+      <div class="grid-item">
+        <h3>HTML</h3>
+        <p>4 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>CSS</h3>
+        <p>4 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>JavaScript</h3>
+        <p>4 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>Accessibility</h3>
+        <p>4 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>React</h3>
+        <p>3 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>Sass</h3>
+        <p>3 Years Experience</p>
+      </div>
+    </div>
+   </section>
+
+  <!-- project section -->
+   <section>
+    <div class="row">
+      <h2>Projects</h2>
+      <a class="btn-contact" href="#">Contact me</a>
+      <div class="row-item">
+        <picture>
+          <source srcset="assets/images/thumbnail-project-1-large.webp" media="(min-width: 768px)">
+          <source srcset="assets/images/thumbnail-project-1-small.webp" media="(min-width: 320px)">
+          <img class="project-img" src="assets/images/thumbnail-project-1-small.webp" alt="project-1">
+        </picture>
+        <div class="project-info">
+          <h3>Design portfolio</h3>
+          <p>HTML CSS</p>
+          <a href="#">View project</a>
+          <a href="#">View code</a>
+        </div>
+      </div>
+      <div class="row-item">
+        <picture> 
+          <source srcset="assets/images/thumbnail-project-2-large.webp" media="(min-width: 768px)">
+          <source srcset="assets/images/thumbnail-project-2-small.webp" media="(min-width: 320px)">
+          <img class="project-img" src="assets/images/thumbnail-project-2-small.webp" alt="project-2">
+        </picture>
+        <div class="project-info">
+          <h3>E-learning landing page</h3>
+          <p>HTML CSS JavaScript</p>
+          <a href="#">View project</a>
+          <a href="#">View code</a>
+        </div>
+      </div>
+      <div class="row-item">
+        <picture>
+          <source srcset="assets/images/thumbnail-project-3-large.webp" media="(min-width: 768px)">
+          <source srcset="assets/images/thumbnail-project-3-small.webp" media="(min-width: 320px)">
+          <img class="project-img" src="assets/images/thumbnail-project-3-small.webp" alt="project-3">
+        </picture>
+        <div class="project-info">
+          <h3>Todo web app</h3>
+          <p>HTML CSS JavaScript</p>
+          <a href="#">View project</a>
+          <a href="#">View code</a>
+        </div>
+      </div>
+      <div class="row-item">
+        <picture>
+          <source srcset="assets/images/thumbnail-project-4-large.webp" media="(min-width: 768px)">
+          <source srcset="assets/images/thumbnail-project-4-small.webp" media="(min-width: 320px)">
+          <img class="project-img" src="assets/images/thumbnail-project-4-small.webp" alt="project-4">
+        </picture>
+        <div class="project-info">
+          <h3>Entertainment web app</h3>
+          <p>HTML CSS JavaScript</p>
+          <a href="#">View project</a>
+          <a href="#">View code</a>
+        </div>
+      </div>
+      <div class="row-item">
+        <picture>
+          <source srcset="assets/images/thumbnail-project-5-large.webp" media="(min-width: 768px)">
+          <source srcset="assets/images/thumbnail-project-5-small.webp" media="(min-width: 320px)">
+          <img class="project-img" src="assets/images/thumbnail-project-5-small.webp" alt="project-5">
+        </picture>
+        <div class="project-info"></div>
+          <h3>Memory Game</h3>
+          <p>HTML CSS JavaScript</p>
+          <a href="#">View project</a>
+          <a href="#">View code</a>
+        </div>
+      </div>  
+      <div class="row-item">
+        <picture>
+          <source srcset="assets/images/thumbnail-project-6-large.webp" media="(min-width: 768px)"> 
+          <source srcset="assets/images/thumbnail-project-6-small.webp" media="(min-width: 320px)">
+          <img class="project-img" src="assets/images/thumbnail-project-6-small.webp" alt="project-6">
+        </picture>
+        <div class="project-info">
+          <h3>Art gallery showcase</h3>
+          <p>HTML CSS JavaScript</p>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- contact section -->
+   <section>
+    <div class="row">
+      <h2>Contact</h2>
+      <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+    </div>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="e.g. email@example.com">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Hi Adam..."></textarea>
+      <button type="submit">Send message</button>
+    </form>
+   </section>
+
+  <!-- footer -->
+   <footer>
+    <hr>
+    <div class="row">
+      <div class="logo">
+        <a href="#">adamkeyes</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><img class="nav-icons" src="assets/images/icon-github.svg" alt="GitHub"></a>
+        <a href="#"><img class="nav-icons" src="assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a>
+        <a href="#"><img class="nav-icons" src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img class="nav-icons" src="assets/images/icon-twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+   </footer>
+</body>
+</html>
