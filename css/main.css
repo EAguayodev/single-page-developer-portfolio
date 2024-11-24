@@ -312,10 +312,12 @@ h1::after{
     width: 27.813rem;
 }
 
-.text-type[type="text"], .text-type[type="email"],  .text-type[type="message"]{
+.text-type[type="text"], 
+.text-type[type="email"],  
+.text-type[type="message"]{
     padding: 1rem 1rem;
     color: var(--night);
-    font-size: 1rme;
+    font-size: 1rem;
 }
 
 .text-type:focus{
@@ -465,4 +467,12 @@ p.footer-contact-text{
         margin-left: auto;
         margin-right: auto;
     }
+
+    .text-type{
+        width: 21.438rem;
+    }
+
+    .btn-message{
+        left: 9rem;
+    }    
 }
