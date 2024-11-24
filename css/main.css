@@ -11,7 +11,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 3px solid red;
 }
 
 /* 2. Remove default margin */
@@ -172,7 +171,7 @@ h1::after{
 
 
 .hero-img {
-    width: 27.813rem;
+    /* width: 27.813rem; */
     max-width: 100%;
     position: relative;
     right: 4rem;
@@ -403,7 +402,7 @@ p.footer-contact-text{
     }
 }
 
-/* TODO:  Remove mobile horizontal scroll */
+
 @media(max-width: 600px) {
     .logo{
         left: 1.5rem;
