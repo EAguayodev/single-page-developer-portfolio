@@ -382,6 +382,10 @@ p.footer-contact-text{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .projects {
+        padding: 2rem;
+    }
+
     footer .row{
         display: flex;
         flex-direction: column;
@@ -431,6 +435,7 @@ p.footer-contact-text{
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        width: 21.438rem;
     }
 
     .row p{
