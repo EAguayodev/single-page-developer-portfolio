@@ -11,6 +11,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    outline: 3px solid red;
 }
 
 /* 2. Remove default margin */
@@ -439,6 +440,10 @@ p.footer-contact-text{
 
     .line{
         width: 21.438rem;
+    }
+
+    .projects{
+        padding: 0;
     }
 
     .grid-row {
