@@ -150,7 +150,7 @@ h1::after{
     max-width: 100%;
 }
 
-.pattern-rings {
+.pattern-rings-1 {
     position: relative;
     right: 4rem;
     top: 5.5rem;
@@ -169,6 +169,7 @@ h1::after{
     color: var(--medium-sea-green);
 }
 
+
 .hero-img {
     width: 27.813rem;
     max-width: 100%;
@@ -185,8 +186,9 @@ h1::after{
     z-index: -3;
 }
 
-hr{
+.line{
    width: 69.375rem;
+   height: 1px;
    background-color: var(--white);
    margin: 0 auto;
 }
@@ -230,6 +232,69 @@ hr{
     gap: 4rem;
 }
 
+.box{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.box:hover .box-content{
+    opacity: 0.7;
+}
+/* 
+.box::before{
+   content: '';
+   background: #242424;
+   position: absolute;
+   top: -50%;
+   left: 0;
+   opacity: 0.8;
+   z-index: 1;
+   width: 100%;
+   height: 50%;
+   transition: all 0.3s ease-in-out 0s;
+}
+
+.box::after {
+    content: '';
+    background: #242424;
+    position: absolute;
+    left: 0;
+    opacity: 0.8;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    transition: all 0.3s ease-in-out 0s;
+} */
+
+.box-content {
+    background: #242424;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    left: 0;
+    bottom: 0%;
+    height: 100%;
+    width: 100%;
+    padding: 36px;
+    color: var(--white);
+    z-index: 5;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.project-info a:hover, .box-content a:hover{
+    color: var(--medium-sea-green);
+}
+
+.box-content a {
+    color: var(--white);
+    text-align: center;
+}
+
 .row-item, h3 {
     color: var(--white);
 }
@@ -254,52 +319,73 @@ hr{
 
 .form-controls {
     padding: 1rem 0;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--white);
+}
+
+.error-message{
+    position: relative;
+    left: 18rem;
 }
 
 .text-type {
     background: none;
     border: none;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+    caret-color: var(--white);
     outline: none;
     width: 27.813rem;
 }
 
-.text-type[type="text"], .text-type[type="email"] {
-    margin: 0 1rem;
+.text-type[type="text"], .text-type[type="email"],  .text-type[type="message"]{
+    padding: 1rem 1rem;
+    color: var(--night);
+    font-size: 1rme;
+}
+
+.text-type:focus{
+    color: var(--white);
+    border-bottom: 1px solid var(--medium-sea-green);
 }
 
 .btn-message {
     background: none;
     border: none;
     outline: none;
+    border-bottom: 3px solid var(--medium-sea-green);
     color: var(--white);
     cursor: pointer;
+    position: relative;
+        left: 20rem;
 }
 
 .btn-message:hover {
     color: var(--medium-sea-green);
 }
 
-.btn-message::after {
-    content: "";
-    border-bottom: 3px solid var(--medium-sea-green);
-}
-
 footer {
     background-color: var(--black);
+    height: 42.188rem;
+    padding: 5rem 1rem;
+}
+
+.pattern-rings-2 {
+    position: relative;
+    right: 23rem;
+    top: 1.5rem;
 }
 
 footer .footer-contact-title{
     color: var(--white);
     font-size: 3rem;
     color: var(--white);
+    margin-bottom: 0.8rem;
+}
+
+p.footer-contact-text{
+    left: 0;
 }
 
 /* Media Queries */
-
-/* TODO: Add more media queries for different screen sizes */
 @media (max-width: 1024px) {
     .nav-bar {
         justify-content: space-around;
@@ -310,7 +396,7 @@ footer .footer-contact-title{
         width: 31.688rem;
     }
 
-    hr{
+    .line{
         width: 44.125rem;
     }
 
@@ -319,15 +405,23 @@ footer .footer-contact-title{
     }
 
     footer .row{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    footer .row, h2{
-        font-size: 2.5rem;
+   footer .footer-contact-title{
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    footer .footer-contact-text{
+        text-align: center;
     }
 }
 
+/* TODO:  Remove mobile horizontal scroll */
 @media(max-width: 600px) {
     .logo{
         left: 1.5rem;
@@ -368,7 +462,7 @@ footer .footer-contact-title{
         margin-right: auto;
     }
 
-    hr{
+    .line{
         width: 21.438rem;
     }
 
