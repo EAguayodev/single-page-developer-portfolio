@@ -122,7 +122,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [w3schools](https://www.w3schools.com/howto/howto_css_image_overlay.asp) - Resource used to create the image overlay effect on the projects section.
-- []() - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Codepen](https://codepen.io/AbdullahSajjad/pen/LYGVRgK) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
@@ -131,3 +131,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
+I wanted to give thanks to [Frontend Mentor](https://www.frontendmentor.io/) for providing the challenge and [Vercel](https://vercel.com/) for hosting the project.

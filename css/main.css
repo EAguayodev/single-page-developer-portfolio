@@ -103,7 +103,7 @@ body{
 
 .social-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     right: 4rem;
@@ -286,6 +286,10 @@ h1::after{
 
 } */
 
+.project-info{
+    margin-top: 1.5rem;
+}
+
 .project-info a{
     color: var(--white);
     border-bottom: 3px solid var(--medium-sea-green);
@@ -345,7 +349,6 @@ h1::after{
 
 footer {
     background-color: var(--black);
-    height: 42.188rem;
     padding: 5rem 1rem;
 }
 
@@ -358,8 +361,13 @@ footer {
 footer .footer-contact-title{
     color: var(--white);
     font-size: 3rem;
-    color: var(--white);
     margin-bottom: 0.8rem;
+}
+
+.nav-footer-row{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
 }
 
 p.footer-contact-text{
@@ -430,7 +438,7 @@ p.footer-contact-text{
     .hero-img{
         top: 0;
         right: 0;
-        left: 3.5rem;        
+        left: 0;        
     }
 
     .row{
@@ -445,6 +453,8 @@ p.footer-contact-text{
         margin-left: auto;
         margin-right: auto;
         width: 21.438rem;
+        left: 0;
+        top: -12rem;
     }
 
     .row p{
@@ -452,15 +462,17 @@ p.footer-contact-text{
         width: 21.438rem;
         margin-left: auto;
         margin-right: auto;
+        left: 0;
+        top: -12rem;
     }
 
     .line{
         width: 21.438rem;
     }
 
-    .projects{
+    /* .projects{
         padding: 0;
-    }
+    } */
 
     .grid-row {
         grid-template-columns: repeat(1, 1fr);
@@ -476,7 +488,11 @@ p.footer-contact-text{
         margin-right: auto;
     }
 
-    footer p {
+    /* .nav-footer-row{
+        flex-direction: column;
+    } */
+
+    .footer-contact-text {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -491,7 +507,6 @@ p.footer-contact-text{
     }    
 
     .error-message{
-        position: relative;
         left: 5rem;
         top: 0.5rem;
     }
