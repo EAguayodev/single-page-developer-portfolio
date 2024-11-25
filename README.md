@@ -49,21 +49,10 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: Hook the form up so it sends and stores the user's enquiry (you can use a spreadsheet or Airtable to save the enquiries)
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-
 ### Links
 
 - Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://single-page-developer-portfolio-nu.vercel.app/)
 
 ## My process
 
@@ -71,6 +60,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Javascript
 - Flexbox
 - CSS Grid
 - Desktop-first workflow
@@ -83,17 +73,46 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="grid-row">
+      <div class="grid-item">
+        <h3>HTML</h3>
+        <p>4 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>CSS</h3>
+        <p>4 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>JavaScript</h3>
+        <p>4 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>Accessibility</h3>
+        <p>4 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>React</h3>
+        <p>3 Years Experience</p>
+      </div>
+      <div class="grid-item">
+        <h3>Sass</h3>
+        <p>3 Years Experience</p>
+      </div>
+    </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.text-type {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+    caret-color: var(--white);
+    outline: none;
+    width: 27.813rem;
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+
 ```
 
 ### Continued development
@@ -103,14 +122,12 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [w3schools](https://www.w3schools.com/howto/howto_css_image_overlay.asp) - Resource used to create the image overlay effect on the projects section.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- []() - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
 - Website - [Eric Aguayo](https://www.ericaguayo.com)
 - Frontend Mentor - [@EAguayodev](https://www.frontendmentor.io/profile/EAguayodev)
-- Twitter - [@ericaguayo](https://www.twitter.com/ericaguayo)
-
 
 ## Acknowledgments
 

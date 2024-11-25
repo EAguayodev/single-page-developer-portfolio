@@ -268,6 +268,10 @@ h1::after{
 .box-content a {
     color: var(--white);
     text-align: center;
+    padding: 1rem 0;
+    text-decoration-color: var(--medium-sea-green);
+    text-decoration: 2px solid var(--medium-sea-green) underline;
+    text-underline-offset: 0.5rem;
 }
 
 .row-item, h3 {
@@ -332,7 +336,7 @@ h1::after{
     color: var(--white);
     cursor: pointer;
     position: relative;
-        left: 20rem;
+    left: 20rem;
 }
 
 .btn-message:hover {
@@ -412,6 +416,12 @@ p.footer-contact-text{
         right: 0;
     }
 
+    .pattern-rings-1{
+        position: relative;
+        right: 9rem;
+        top: -39rem;
+    }
+
     .nav-bar{
         justify-content: space-between;
         flex-direction: column;
@@ -479,4 +489,13 @@ p.footer-contact-text{
     .btn-message{
         left: 9rem;
     }    
+
+    .error-message{
+        position: relative;
+        left: 5rem;
+        top: 0.5rem;
+    }
+    footer{
+        height: 100%;
+    }
 }
