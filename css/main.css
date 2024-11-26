@@ -132,9 +132,8 @@ body{
     left: 6rem;
 }
 
-h1::after{
-    content: "";
-    border-bottom: 3px solid var(--medium-sea-green);
+span{
+    border-bottom: 4px solid var(--medium-sea-green);
 }
 
 .row p{
@@ -150,6 +149,16 @@ h1::after{
     max-width: 100%;
 }
 
+.hero .btn-contact-hero{
+    color: var(--white);
+    border-bottom: 3px solid var(--medium-sea-green);
+    position: relative;
+    text-decoration: none;
+    top: 1.5rem;
+    left: 6rem;
+    text-transform: uppercase;
+}
+
 .pattern-rings-1 {
     position: relative;
     right: 4rem;
@@ -161,8 +170,8 @@ h1::after{
     border-bottom: 3px solid var(--medium-sea-green);
     position: relative;
     text-decoration: none;
-    left: 5.9rem;
     top: 1.5rem;
+    text-transform: uppercase;
 }
 
 .btn-contact:hover{
@@ -226,6 +235,12 @@ h1::after{
     color: var(--white);
 }
 
+.title-grid{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
 .grid-row-projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -272,6 +287,7 @@ h1::after{
     text-decoration-color: var(--medium-sea-green);
     text-decoration: 2px solid var(--medium-sea-green) underline;
     text-underline-offset: 0.5rem;
+    text-transform: uppercase;
 }
 
 .row-item, h3 {
@@ -294,6 +310,7 @@ h1::after{
     color: var(--white);
     border-bottom: 3px solid var(--medium-sea-green);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* .contact {
@@ -433,6 +450,11 @@ p.footer-contact-text{
     .nav-bar{
         justify-content: space-between;
         flex-direction: column;
+    }
+
+    .hero .btn-contact-hero{
+        top: -10rem;
+        left: 9rem;
     }
 
     .hero-img{
