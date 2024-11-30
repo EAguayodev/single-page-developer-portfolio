@@ -321,7 +321,7 @@ span{
     padding: 1rem 0;
 }
 
-.error-message{
+.error{
     position: relative;
     left: 18rem;
 }
@@ -539,7 +539,7 @@ p.footer-contact-text{
         left: 7rem;
     }    
 
-    .error-message{
+    .error{
         left: 5rem;
         top: 0.5rem;
     }

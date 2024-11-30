@@ -231,20 +231,21 @@
       </div>
     
       <div>
-        <form id="contactForm" action="">
+        <!-- https://airtable.com/appITqGEMA4adS7pv/shrojI860757KCCaC -->
+        <form id="contactForm" action="/" method="post">
           <div class="form-controls">
             <input class="text-type" type="text" id="name" name="name" placeholder="NAME">
-            <small class="error-message"></small>
+            <small class="error"></small>
           </div>
           <div class="form-controls">
             <input class="text-type" type="email" id="email" name="email" placeholder="EMAIL">
-            <small class="error-message"></small>
+            <small class="error" id="email-error"></small>
           </div>
           <div class="form-controls">
             <input class="text-type" type="message" id="message" name="message" placeholder="MESSAGE">
-            <small class="error-message"></small>
+            <small class="error"></small>
           </div>
-          <button class="btn-message" type="submit">Send message</button>
+          <button class="btn-message" id="send-message" type="submit">Send message</button>
         </form>
       </div>
     </div>
