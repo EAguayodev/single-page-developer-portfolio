@@ -49,5 +49,10 @@ form.addEventListener("submit", (e) => {
 
   if (isValid) {
     alert("Form submitted successfully!");
+    // Optionally send data to a server or Airtable
+    // e.g., postToAirtable({ name, email, message });
+
   }
 });
+
+// TODO: Add a function to send the form data to a spreadsheet or Airtable.

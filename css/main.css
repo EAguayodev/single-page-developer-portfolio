@@ -18,6 +18,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* 3. Add accessible line-height */
     line-height: 1.5;
@@ -313,10 +317,6 @@ span{
     text-transform: uppercase;
 }
 
-/* .contact {
-
-} */
-
 .form-controls {
     padding: 1rem 0;
 }
@@ -347,6 +347,7 @@ span{
 .text-type:focus{
     color: var(--white);
     border-bottom: 1px solid var(--medium-sea-green);
+    background: none;
 }
 
 .btn-message {

@@ -1,27 +1,5 @@
 # Frontend Mentor - Single-page developer portfolio
 
-## The challenge
-
-Your challenge is to build out this single-page portfolio and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So, if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
-
-- Receive an error message when the `form` is submitted if:
-  - Any field is empty
-  - The email address is not formatted correctly
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: Hook the form up so it sends and stores the user's enquiry (you can use a spreadsheet or Airtable to save the enquiries)
-
-### Expected behaviour
-
-When the user clicks the "Contact me" call-to-action in the hero or projects section, the browser should scroll down to the contact form.
-
-
-# Frontend Mentor - Single-page developer portfolio solution
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -36,8 +14,6 @@ When the user clicks the "Contact me" call-to-action in the hero or projects sec
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-## Overview
-
 ### The challenge
 
 Users should be able to:
@@ -51,10 +27,11 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/EAguayodev/single-page-developer-portfolio)
 - Live Site URL: [Vercel](https://single-page-developer-portfolio-nu.vercel.app/)
 
 ## My process
+Build out the single page developer portoflio project with the primary focus on the form validation, and the use of html and css displaying the layout for desktop, tablet, and mobile using flexbox and css grid. My process was top down, starting with the desktop layout and then building out the tablet and mobile layouts.
 
 ### Built with
 
@@ -68,37 +45,26 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- How to use the nextElementSibling to target the error message.
+- How to use the trim method to remove any whitespace from the input fields.
+- How to use the test method to validate the email address.
+- How to use the display property to show and hide the error message.
+- How to use the css grid to create the layout for the desktop, tablet, and mobile views.
 
 To see how you can add code snippets, see below:
 
 ```html
-<div class="grid-row">
-      <div class="grid-item">
-        <h3>HTML</h3>
-        <p>4 Years Experience</p>
-      </div>
-      <div class="grid-item">
-        <h3>CSS</h3>
-        <p>4 Years Experience</p>
-      </div>
-      <div class="grid-item">
-        <h3>JavaScript</h3>
-        <p>4 Years Experience</p>
-      </div>
-      <div class="grid-item">
-        <h3>Accessibility</h3>
-        <p>4 Years Experience</p>
-      </div>
-      <div class="grid-item">
-        <h3>React</h3>
-        <p>3 Years Experience</p>
-      </div>
-      <div class="grid-item">
-        <h3>Sass</h3>
-        <p>3 Years Experience</p>
-      </div>
-    </div>
+<div class="box">
+  <picture>
+    <source srcset="assets/images/thumbnail-project-1-large.webp" media="(min-width: 900px)">
+    <source srcset="assets/images/thumbnail-project-1-small.webp" media="(min-width: 768px)">
+    <img class="project-img" src="assets/images/thumbnail-project-1-small.webp" alt="project-1">
+  </picture>
+  <div class="box-content">
+    <a href="#">View project</a>
+    <a href="#">View code</a>
+  </div>
+</div>
 ```
 ```css
 .text-type {
@@ -112,17 +78,30 @@ To see how you can add code snippets, see below:
 }
 ```
 ```js
-
+ const emailError = emailField.nextElementSibling;
+  if (!emailField.value.trim()) {
+    emailError.textContent = "Sorry, email is required.";
+    emailError.style.display = "block";
+    emailError.style.color = "#FF6F5B";
+    emailField.style.borderBottom = "1px solid #FF6F5B";
+    isValid = false;
+  } else if (!/^\S+@\S+\.\S+$/.test(emailField.value)) {
+    emailError.textContent = "Sorry, invalid format here .";
+    isValid = false;
+  } else {
+    emailError.textContent = "";
+  }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
+- For future projects, I want to continue focusing on improving my JavaScript skills and will add in using css framworks like Tailwind CSS and Scss.
+- Once I have a better understanding of JavaScript, I want to start learning React.
+- I also will learn a backend language like c#, php and SQL to be able to connect the frontend to the backend.
 ### Useful resources
 
 - [w3schools](https://www.w3schools.com/howto/howto_css_image_overlay.asp) - Resource used to create the image overlay effect on the projects section.
-- [Codepen](https://codepen.io/AbdullahSajjad/pen/LYGVRgK) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Codepen](https://codepen.io/AbdullahSajjad/pen/LYGVRgK) - Resource used to get ideas for the form validation.
 
 ## Author
 
