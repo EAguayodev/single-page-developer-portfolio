@@ -1,6 +1,6 @@
 const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async(e) => {
   e.preventDefault();
   let isValid = true;
 
@@ -49,10 +49,32 @@ form.addEventListener("submit", (e) => {
 
   if (isValid) {
     alert("Form submitted successfully!");
-    // Optionally send data to a server or Airtable
-    // e.g., postToAirtable({ name, email, message });
+ const formData = {
+      name: nameField.value.trim(),
+      email: emailField.value.trim(),
+      message: messageField.value.trim(),
+    };
 
+    try {
+      // Send data to Google Sheets
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbwHXnvRs8Ud7ediKxRggKcfmGfrigP5sFfTD-OAO8YFjPfI99Em25vIYZVdVxCflk-iBg/exec",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        alert("Form submitted successfully to Google Sheets!");
+        form.reset(); // Clear the form
+      } else {
+        alert("Failed to submit the form to Google Sheets.");
+      }
+    } catch (error) {
+    //   console.error("Error submitting data to Google Sheets:", error);
+      alert("An error occurred while submitting the form.");
+    }
   }
 });
-
-// TODO: Add a function to send the form data to a spreadsheet or Airtable.
