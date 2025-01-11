@@ -6,80 +6,6 @@
     --white: hsl(0, 0%, 100%);
 }
 
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* 2. Remove default margin */
-* {
-    margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-}
-
-/* 5. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* 7. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-/* 8. Improve line wrapping */
-p {
-    text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-    isolation: isolate;
-}
-
 body{
     background-color: var(--night);
     font-family: 'Space Grotesk', sans-serif;
@@ -388,7 +314,7 @@ footer .footer-contact-title{
         margin-top: 2rem;
 }
 
-p.footer-contact-text{
+footer .contact-text{
     left: 0;
 }
 
@@ -427,7 +353,7 @@ p.footer-contact-text{
         text-align: center;
     }
 
-    footer .footer-contact-text{
+    footer .contact-text{
         text-align: center;
     }
 }
@@ -525,11 +451,11 @@ p.footer-contact-text{
         margin: 2rem 0;
     }
 
-    .footer-contact-text {
+    footer .contact-text {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        top: 12rem;
+        top: 0;
     }
 
     .text-type{

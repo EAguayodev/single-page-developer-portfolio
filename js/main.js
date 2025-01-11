@@ -49,7 +49,7 @@ form.addEventListener("submit", async(e) => {
 
   if (isValid) {
     alert("Form submitted successfully!");
- const formData = {
+    const formData = {
       name: nameField.value.trim(),
       email: emailField.value.trim(),
       message: messageField.value.trim(),
@@ -58,7 +58,7 @@ form.addEventListener("submit", async(e) => {
     try {
       // Send data to Google Sheets
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwHXnvRs8Ud7ediKxRggKcfmGfrigP5sFfTD-OAO8YFjPfI99Em25vIYZVdVxCflk-iBg/exec",
+        "https://script.google.com/macros/s/AKfycbzoGLP7hKC_wI_RsrofvL3mt0oaMHcm6jEIwq1zgi5iqXjcxoJ1tg2BWQmCJbXkJ--PYA/exec",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -73,7 +73,7 @@ form.addEventListener("submit", async(e) => {
         alert("Failed to submit the form to Google Sheets.");
       }
     } catch (error) {
-    //   console.error("Error submitting data to Google Sheets:", error);
+      console.error("Error submitting data to Google Sheets:", error);
       alert("An error occurred while submitting the form.");
     }
   }
