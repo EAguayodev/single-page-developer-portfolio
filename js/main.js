@@ -2,6 +2,7 @@ const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", async(e) => {
   e.preventDefault();
+
   let isValid = true;
 
   const emailField = document.getElementById("email");
@@ -58,7 +59,7 @@ form.addEventListener("submit", async(e) => {
     try {
       // Send data to Google Sheets
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzoGLP7hKC_wI_RsrofvL3mt0oaMHcm6jEIwq1zgi5iqXjcxoJ1tg2BWQmCJbXkJ--PYA/exec",
+        "https://docs.google.com/spreadsheets/d/1Cb2qFP6bSQKebMqXO_AO9oha67YaLZCT53W01HOwh74/edit?gid=0#gid=0",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

@@ -217,8 +217,6 @@
         </div>
       </div>
     </div>  
-      
-    </div>
    </section>
 
   <!-- footer -->
@@ -233,17 +231,17 @@
     
       <div>
         <!-- https://airtable.com/appITqGEMA4adS7pv/shrojI860757KCCaC -->
-        <form id="contactForm" action="https://script.google.com/macros/s/AKfycbzoGLP7hKC_wI_RsrofvL3mt0oaMHcm6jEIwq1zgi5iqXjcxoJ1tg2BWQmCJbXkJ--PYA/exec" method="POST">
+        <form id="contactForm" action="https://sheetdb.io/api/v1/1cd0o1wy5i4ge" method="post">
           <div class="form-controls">
-            <input class="text-type" type="text" id="name" name="name" placeholder="NAME">
+            <input class="text-type" type="text" id="name" name="data[name]" placeholder="NAME">
             <small class="error"></small>
           </div>
           <div class="form-controls">
-            <input class="text-type" type="email" id="email" name="email" placeholder="EMAIL">
+            <input class="text-type" type="email" id="email" name="data[email]" placeholder="EMAIL">
             <small class="error" id="email-error"></small>
           </div>
           <div class="form-controls">
-            <input class="text-type" type="message" id="message" name="message" placeholder="MESSAGE">
+            <input class="text-type" type="message" id="message" name="message[message]" placeholder="MESSAGE">
             <small class="error"></small>
           </div>
           <button class="btn-message" id="send-message" type="submit">Send message</button>

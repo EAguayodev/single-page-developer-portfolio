@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/EAguayodev/single-page-developer-portfolio)
-- Live Site URL: [Vercel](https://single-page-developer-portfolio-nu.vercel.app/)
+- Live Site URL: [Netlify](https://dev-portfolio-single-page.netlify.app/)
 
 ## My process
 Build out the single page developer portoflio project with the primary focus on the form validation, and the use of html and css displaying the layout for desktop, tablet, and mobile using flexbox and css grid. My process was top down, starting with the desktop layout and then building out the tablet and mobile layouts.

@@ -11,7 +11,6 @@ body{
     font-family: 'Space Grotesk', sans-serif;
 }
 
-/* Navbar Style */
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -48,11 +47,11 @@ body{
     fill: var(--medium-sea-green);
 }
 
-/* Hero Section Style */
+
 .row{
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
+ 
 }
 
 .row h1{
@@ -110,7 +109,6 @@ span{
 
 
 .hero-img {
-    /* width: 27.813rem; */
     max-width: 100%;
     position: relative;
     right: 4rem;
@@ -132,7 +130,6 @@ span{
    margin: 0 auto;
 }
 
-/* Skills Section Style */
 .skills {
     max-width: 100%;
     padding: 2rem 6rem;
@@ -154,7 +151,6 @@ span{
     color: var(--white);
 }
 
-/* Projects Section Style */
 .projects {
     max-width: 100%;
     padding: 8rem 6rem;
@@ -227,10 +223,6 @@ span{
 .row-item, p {
     color: var(--gains-boro);
 }
-
-/* .project-img {
-
-} */
 
 .project-info{
     margin-top: 1.5rem;
@@ -318,7 +310,7 @@ footer .contact-text{
     left: 0;
 }
 
-/* Media Queries */
+
 @media (max-width: 1024px) {
     .nav-bar {
         justify-content: space-around;
@@ -419,10 +411,6 @@ footer .contact-text{
         width: 21.438rem;
     }
 
-    /* .projects{
-        padding: 0;
-    } */
-
     .grid-row {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -473,4 +461,4 @@ footer .contact-text{
     footer{
         height: 100%;
     }
-}
+} 
